@@ -1,0 +1,523 @@
+/*/*/* Empty. Add your own CSS if you like */
+
+/* Tommy Tommy Tommy Tommy Tommy*/
+/* Empty. Add your own CSS if you like */
+
+.slider-slide h3{
+	color:#fff;
+	margin-top:10px;
+}
+
+.bookmarkcolor {
+	color: #ffff00;
+}
+.scroll{
+	height:100%;.box1, .box2{
+
+	height: 300px;
+	border: 2px solid #F0F8FF;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+div.hscroller {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.mine-wrap h4 {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.card .notif-active{
+	background-color:#f6f6f6 !important;
+}
+.notif-inactive{
+	background-color:#ffffff !important;
+}
+
+
+.date1, .date2{
+
+	height: 70px;
+	border-top: 4px solid #444;
+	background-color: #f5f5f5;
+}
+
+
+.colg{
+background: #33cd5f;
+border: white solid 1px;
+}
+.colng{
+background: #33cd5f;
+border: white solid 1px;
+width: 20px;
+}
+.colr{
+background: #ef473a;
+border: white solid 1px;
+}
+
+
+.roundrect {
+border-radius: 15px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.item-profile {
+  height: 150px;
+ }
+
+.name-head {
+
+    display: block;
+    font-size: 25px;
+    width:100%;
+    text-align:center;
+}
+.img-shadow
+ {
+    box-shadow: 3px 3px 2px #000;
+}
+
+.wide-item {
+  width: 10000px;
+/*  overflow-x: scroll; /*
+/*  -webkit-overflow-scrolling: touch;  */
+}
+.push-right {
+padding: 0px 0px 0px 10px;
+}
+
+}
+
+.tabbed-slidebox .tsb-icons:after{
+	display:none;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.back-balanced{
+  background-color: #ef473a;
+  text-align : center;
+  padding : 10px;
+}
+
+.back-assertive{
+  background-color: #ef473a;
+  text-align : center;
+  padding : 10px;
+}
+
+.mine-footer{
+	max-width:33.33% !important;
+	height:100% !important;
+	padding:10px 2rem !important;
+}
+
+/* Tommy Tommy Tommy Tommy Tommy*/
+
+.tabs-top > .tabs, .tabs.tabs-top {
+
+}
+.view-background{
+	background-color: #f3f3f3 !important;
+/*	top:22px !important;
+*/}
+.card-profile{
+	height: 120px;
+	box-shadow: 0px 3px 1px #c3c3c3;
+}
+.p-pic{
+    border-radius: 50%;
+    margin-left:25%;
+    box-shadow: 0px 10px 10px 5px #888888;
+}
+
+.nopadding{
+	padding: 0px 0px 0px 0px;
+}
+.profile-pic{
+	width:100%;
+	height: 100%;
+	padding: 2px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-color: #f3f3f3;
+	float: left;
+	position: relative;
+	left:35%;
+	top:5px;
+
+}
+.menu-profile-pic{
+	width:35%;
+	height: 100%;
+	padding: 2px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-color: #f3f3f3;
+	float: left;
+	position: relative;
+	max-width: 120px;
+    max-height: 120px;
+    padding: 5px;
+	/*left:35%;
+	top:5px;*/
+}
+.user-detail{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 5px;
+}
+.menu-user-detail{
+	/*width: 70%;*/
+    float: right;
+}
+.short-detail{
+	padding: 8px 3px 3px 8px;
+}
+.menu-short-detail{
+	padding: 5px 0px 40px 10px;
+}
+.full-detail{
+	width: 100%;
+    height: 30%;
+    padding: 7px;
+    background-color: #5c99ff;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+.pull-left{
+	float: left;
+	margin-left: 5px;
+}
+.pull-right{
+	float: right;
+	margin-right: 5px;
+}
+.icon-color{
+	color:#387ef5;
+}
+.view-full-profile-btn{
+	padding:7px 0px;
+	color:#f6f6f6;
+	margin: auto;
+}
+.arrow-full-profile{
+	font-size: 35px;
+    color: #f6f6f6;
+    margin: auto;
+    width: 30%;
+    padding: 0px 0px;
+}
+.patient-history{
+	height: 100px;
+	box-shadow: 0px 3px 1px #c3c3c3;
+}
+.card-header{
+	margin: 5px;
+    width: 90%;
+    color: #1b1b1b;
+}
+.card-description{
+	color: #797979;
+    margin-left: 55px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.mine-nav-bar{
+	background-color: #5c99ff !important;
+
+
+}
+.title{
+	color:#f6f6f6 !important;
+	/*left:65px !important;*/
+}
+
+.nopadding{
+	padding: 0px 0px 0px 0px;
+}
+.card{
+	padding:2px;
+}
+.card-edit-header{
+	width:100%;
+	padding: 5px 5px;
+	color:#6f6f6f;
+	border-bottom: solid 1px #f6f6f6;
+}
+.dclinic-header{
+	width:100%;
+	padding: 15px 5px;
+	color:#6f6f6f;
+	border-bottom: solid 1px #d4d4d4;
+}
+.card-content{
+	padding: 7px 35px;
+}
+.clinic-item-title{
+	width:20%;
+	float:left;
+}
+.clinic-item-info{
+	width:80%;
+	float:right;
+	border-bottom:1px solid #f3f3f3;
+	padding: 0px 0px 10px 15px;
+}
+.card-content-item{
+	border-bottom: solid 1px #f6f6f6;
+    padding: 5px;
+}
+
+
+.item-name{
+	color:#adadad;
+}
+.item-value{
+	color:#101010;
+	float: right;
+}
+.card-content-item.last{
+	border-bottom: 0 px !important;
+}
+.card-content-item.add{
+	color:#5c99ff;
+	font-size:15px;
+}
+.mine-hide{
+	display: none !important;
+
+}
+/*.card-contact-info{
+	display: block;
+}
+.card-contact-info-edit{
+	display: none;
+}*/
+.mine-button{
+    height: 23px !important;
+    min-height: 10px !important;
+    min-width: 25px !important;
+    width: 65px;
+    padding: 0px 2px !important;
+    color:white !important;
+}
+.mine-button:after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+}
+.mine-save-button{
+	background-color: #5c99ff !important;
+}
+.mine-cancel-button{
+	background-color: #757575 !important;
+}
+.mine-input-bottom{
+	border-bottom: 1px solid #f3f3f3 !important;
+}
+.item-floating-label .input-label.has-input{
+	color:#c7c7c7;
+	font-weight:lighter;
+}
+.card-content-inner{
+	padding:5px;
+}
+.edit-photo{
+	position: absolute;
+	left:43%;
+    top: 65%;
+    color: white;
+    padding: 0px 5px;
+    /*border: 1px solid;*/
+    border-radius: 5px;
+    background: rgba(0,0,0,.26);
+}
+.item-icon{
+	width: 15%;
+    font-size: 30px;
+    border-right: 1px solid #f3f3f3;
+    /* padding: 5px; */
+    float: left;
+    text-align: center;
+}
+.item-title{
+	color: #3e3d3d;
+    width: 85%;
+    float: right;
+    padding: 5px 5px 5px 15px;
+    font-size: 18px;
+
+}
+
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
+}
+.scroll {
+  min-width: 100%;
+}
+div.hscroller {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.search-box{
+	background:  url(../img/gradient-demo.jpg) no-repeat right top;
+	padding:14px;
+	background-size:100%;
+}
+.search-box .top{
+	color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000,
+               3px 3px 5px #000;
+}
+.search-box .card{
+	margin: 15px 0px 35px 0px;
+}
+.mine-full-button{
+	height:100%;
+	padding:0px;
+	width: 100% !important;
+	max-width: 100% !important;
+	margin:0px !important;
+}
+.button-icon .icon:before, .button-icon.icon:before{
+	font-size: 20px;
+}
+.popup .button{
+	padding:0px !important;
+}
+
+ul#strength {
+    display:inline;
+    list-style:none;
+    margin:0;
+    margin-left:15px;
+    padding:0;
+    vertical-align:2px;
+}
+.point:last {
+    margin:0 !important;
+}
+.point {
+    background:#DDD;
+    border-radius:2px;
+    display:inline-block;
+    height:5px;
+    margin-right:1px;
+    width:20px;
+}
+
+.highlight {
+    color: black;
+    background-color: #ccccff;
+}
+
+.progress-bar {
+    background-color: #FBFBFB;
+    height: 25px;
+    padding: 5px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;
+}
+
+.blue span {
+    background-color: #34c2e3;
+}
+
+.orange span {
+      background-color: #fecf23;
+      background-image: linear-gradient(top, #fecf23, #fd9215);
+}
+
+.green span {
+      background-color: #a5df41;
+      background-image: linear-gradient(top, #a5df41, #4ca916);
+}
+
+.stripes span {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);
+
+    animation: animate-stripes 3s linear infinite;
+}
+
+@keyframes animate-stripes {
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+.glow span {
+    box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+    animation: animate-glow 1s ease-out infinite;
+}
+
+@keyframes animate-glow {
+ 0% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+ 50% { box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;}
+ 100% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+ }
+
+ .shine span {
+     position: relative;
+ }
+
+ .shine span::after {
+     content: '';
+     opacity: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: #fff;
+     border-radius: 3px;
+     animation: animate-shine 2s ease-out infinite;
+ }
+
+ @keyframes animate-shine {
+     0% {opacity: 0; width: 0;}
+     50% {opacity: .5;}
+     100% {opacity: 0; width: 95%;}
+ }
+/*.preferences .item{
+	min-height:35px;
+	height:35px;
+}*/
+*/*/

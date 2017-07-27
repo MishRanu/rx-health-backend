@@ -1,0 +1,175 @@
+<ion-view view-title="Home" cache-view="false">
+  <ion-header-bar align-title="left" class="bar-positive">
+    <h1 class="title">DxHealth</h1>
+  </ion-header-bar>
+  <ion-content class="has-header">
+    <!--<ion-scroll direction="x" class="wide-as-needed">-->
+      <!--<ion-item class="button" ng-repeat="item in conditions" ng-class="{'highlight':item.match == '1'}"-->
+                <!--ng-click="getmatch(item)">-->
+        <!--<div class="card" style="width:120px; height:100px; margin:10px; ">-->
+          <!--<div class="item item-text-wrap" style="text-align:center">-->
+            <!--<p style="font-size:12px; line-height:15px">{{item.ConditionName}}</p>-->
+
+            <!--<p style="font-size:12px; line-height:15px">{{item.CondProb}}%</p>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</ion-item>-->
+    <!--</ion-scroll>-->
+
+    <div class="card">
+      <div class="card-edit-header" style="background-color:#f6f6f6">
+        <span>Patient Details</span>
+      </div>
+      <div class="card-content">
+        <label class="item item-input "> <span class="input-label">Age</span>
+          <input type="text" placeholder="Patient Age" class="mine-input-bottom" style="width:100%;" ng-model="u.age"
+                 type="number">
+        </label>
+      </div>
+
+      <div class="card-content">
+        <span style="float:left; padding: 8px 8px 8px 16px;">MALE</span>
+        <label class="toggle toggle-positive" style="float:left">
+          <input type="checkbox" placeholder="" ng-model="u.gender">
+
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+        <span style="float:left; padding:8px">FEMALE</span>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col card">
+        <button class="button button-clear button-small button-positive"
+                ng-class="{'button-assertive':showtab1 == true}"
+                ng-click="showtab1 =! showtab1; showtab2 =! showtab2;">
+          Symptoms
+        </button>
+        <button class="button button-clear button-small button-positive"
+                ng-class="{'button-assertive':showtab2 == true}"
+                ng-click="showtab1 =! showtab1; showtab2 =! showtab2;">
+          Selected Symptoms({{evidence.length}})
+        </button>
+        <div ng-show="showtab1">
+          <label class="item-input-wrapper"
+                 style="background-color: #fff;    border: 1px solid #f3f3f3;margin: 25px 10px;">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input ng-change="keyfunc()" type="search" placeholder="Search Symptoms" ng-model="u.query1"
+                   style="width:100%">
+            <ion-spinner icon="ripple" ng-if="showLoadingIcon" style="float : right"></ion-spinner>
+          </label>
+          <ion-item ng-repeat="queryitem in querylist | filter : query1" item-height="55px" item-width="100%"
+                    ng-click="setModelSymptom(queryitem)" class="item-text-wrap">
+            {{queryitem.name}}
+          </ion-item>
+        </div>
+        <div ng-show="showtab2">
+          <ion-list>
+            <ion-item ng-repeat="item in evidence | reverse" ng-class="{'highlight':item.match == '1'}"
+                      style="padding:5px; white-space:inherit">
+              <p style="font-weight:bold">{{item.name}} - {{item.choice_id}}</p>
+
+              <div class="item-divider" style="padding:5px; min-height:0px; background-color:#ffffff">
+
+                <button class="button button-small button-clear button-balanced" ng-click="present(item)">
+                  <i class="icon ion-checkmark"></i>
+                </button>
+                <button class="button button-small button-clear button-assertive" ng-click="absent(item)">
+                  <i class="icon ion-close"></i>
+                </button>
+                <button class="button button-small button-clear button-positive" ng-click="unknown(item)">
+                  <i class="icon ion-help"></i>
+                </button>
+                <button class="button button-small button-clear button-dark" ng-click="onSymptomDelete(item)">
+                  <i class="ion-minus-circled"></i>
+                </button>
+              </div>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+
+      <div class="col card">
+        <button class="button button-clear button-small button-positive"
+                ng-class="{'button-assertive':showtab3 == true}"
+                ng-click="showtab3 =! showtab3; showtab4 =! showtab4;">
+          All symptoms
+        </button>
+        <button class="button button-clear button-small button-positive"
+                ng-class="{'button-assertive':showtab4 == true}"
+                ng-click="showtab3 =! showtab3; showtab4 =! showtab4;">
+          Next Question
+        </button>
+
+        <div ng-show="showtab3">
+          <p>{{condition}}</p>
+          <ion-list>
+            <ion-item ng-repeat="item in symptoms" ng-class="{'highlight':item.match == '1'}" style="padding:5px">
+              <p style="font-weight:bold">{{item.SymptomName}} <i class="icon ion-plus" ng-click="add(item)"
+                                                                  style="float:right"></i></p>
+
+            </ion-item>
+          </ion-list>
+        </div>
+        <div ng-show="showtab4">
+        {{matchdata.question.text}}
+          <ion-list>
+            <ion-item ng-repeat="item in matchdata.question.items" ng-class="{'highlight':item.match == '1'}" style="padding:5px">
+              <p style="font-weight:bold">{{item.name}} <i class="icon ion-plus" ng-click="add2(item)"
+                                                                  style="float:right"></i></p>
+
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+
+      <div class="col card">
+        <button class="button button-clear button-small button-positive"
+                ng-class="{'button-assertive':showtab5 == true}"
+                ng-click="showtab5 =! showtab5; showtab6 =! showtab6;">
+          Common Conditions
+        </button>
+        <button class="button button-clear button-small button-positive"
+                ng-class="{'button-assertive':showtab6 == true}"
+                ng-click="showtab5 =! showtab5; showtab6 =! showtab6;">
+          Rare Conditions
+        </button>
+
+        <div ng-show="showtab5">
+          <ion-list>
+            <ion-item ng-repeat="item in common" ng-class="{'highlight':item.match == '1'}"
+                      ng-click="getmatch(item)">
+                  <p style="font-size:12px; line-height:15px">{{item.ConditionName}}</p>
+
+                  <!--<p style="font-size:12px; line-height:15px">{{item.CondProb}}%</p>-->
+              <div class="progress-bar orange glow">
+                <span style="width: {{item.CondProb}}%"><p style="float:left; color:#000000; font-size:12px; line-height:15px">{{item.CondProb}}%</p></span>
+              </div>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div ng-show="showtab6">
+          <ion-list>
+            <ion-item ng-repeat="item in rare" ng-class="{'highlight':item.match == '1'}"
+                      ng-click="getmatch(item)">
+                  <p style="font-size:12px; line-height:15px">{{item.ConditionName}}</p>
+
+                  <!--<p style="font-size:12px; line-height:15px">{{item.CondProb}}%</p>-->
+              <div class="progress-bar orange glow">
+                <span style="width: {{item.CondProb}}%"><p style="float:left; font-size:12px; line-height:15px">{{item.CondProb}}%</p></span>
+              </div>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+
+    </div>
+  </ion-content>
+</ion-view>
